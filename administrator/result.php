@@ -60,8 +60,8 @@ if (isset($_POST["submit"])) {
                     echo "<td colspan='2'>" . $row['com216'] . "</td>";
                     echo "<td colspan='2'>" . $row['com224'] . "</td>";
                     echo "<td colspan='2'>" . $row['com206'] . "</td>";
-                    echo "<td colspan='2'>" . $row['session'] . "</td>";
                     echo "<td colspan='2'>" . $row['semester'] . "</td>";
+                    echo "<td colspan='2'>" . $row['session'] . "</td>";
                     echo "<td colspan='2'>" . $row['department'] . "</td>";
                     echo "</tr>";
                 }

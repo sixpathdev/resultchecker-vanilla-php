@@ -26,7 +26,7 @@ if ($_SESSION["loggedin"] == true) {
                     <input type="password" name="password" id="password" class="form-control" placeholder="Password">
 
                 </div>
-                <button type="submit" name="submit" class="btn btn-success">Login</button>
+                <button type="submit" name="submit" class="btn bg-custom text-white">Login</button>
             </form>
         </div>
     </div>

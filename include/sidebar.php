@@ -9,6 +9,6 @@
         <a href="../administrator/checkResult.php" class="text-decoration-none text-white pr-lg-3">Check Result</a></i>
     </div>
     <div class="border-bottom py-2">
-        <a href="../administrator/getAllResult.php" class="text-decoration-none text-white pr-lg-3">Get All Results</a></i>
+        <a href="../administrator/select.php" class="text-decoration-none text-white pr-lg-3">Get All Results</a></i>
     </div>
 </div>
