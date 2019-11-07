@@ -13,3 +13,6 @@ include('../include/sidebar.php');
         <button type="submit" name="second" value="second" class="btn bg-custom my-2 text-white px-3 ml-5">Second Semester</button>
     </form>
 </div>
+<?php
+include('../include/footer2.php');
+?>
