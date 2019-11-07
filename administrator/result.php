@@ -1,6 +1,8 @@
 <?php
 require('../include/topnav.php');
 include('../include/sidebar.php');
+// include('../include/footer.php');
+
 
 $matno = $session = $semester = '';
 
@@ -34,7 +36,7 @@ if (isset($_POST["submit"])) {
         $stmt->bindParam(':semester', $semester);
 
         if ($stmt->execute()) {
-            if ($stmt->rowCount() == 1) {
+            if ($stmt->rowCount() > 0) {
                 echo "<div class='text-center offset-1 mt-5 border'>";
                 echo "<h3>Captain Elechi Amadi Polytechnic</h3>";
                 echo "<table class='table table-bordered bg-white'>";
@@ -76,3 +78,5 @@ if (isset($_POST["submit"])) {
         }
     }
 }
+
+require('./include/footer.php');

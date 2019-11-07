@@ -1,5 +1,4 @@
 <?php
-// $_SERVER['DOCUMENT_ROOT'] . '/include/header.php'
 require("../include/header.php");
 include("../include/sidebar.php");
 ?>

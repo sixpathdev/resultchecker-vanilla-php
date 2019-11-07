@@ -39,3 +39,8 @@ require("../include/sidebar.php");
         </div>
     </div>
 </div>
+
+<?php
+
+include('../include/footer2.php');
+?>

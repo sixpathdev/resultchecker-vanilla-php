@@ -5,15 +5,15 @@ include('../include/sidebar.php');
 $name = '';
 $department = "compsci";
 
-if (isset($_GET["first"])) {
-    $name = $_GET["first"];
-} elseif (isset($_GET["second"])) {
-    $name = $_GET["second"];
+if (isset($_POST["first"])) {
+    $name = $_POST["first"];
+} elseif (isset($_POST["second"])) {
+    $name = $_POST["second"];
 } else {
     $name = '';
 }
 
-if (isset($_GET["$name"])) {
+if (isset($_POST["$name"])) {
 
     $sql = "SELECT * FROM results WHERE semester=:name AND department=:department";
     $stmt = $pdo->prepare($sql);
@@ -24,6 +24,7 @@ if (isset($_GET["$name"])) {
         if ($stmt->rowCount() > 0) {
             echo "<div class='text-center offset-1 mt-5 border'>";
             echo "<h3>Captain Elechi Amadi Polytechnic</h3>";
+            echo "<h5>Department of Computer science - $name semester</h5>";
             echo "<table class='table table-bordered bg-white'>";
             echo "<thead>";
             echo "<tr>";
@@ -62,3 +63,5 @@ if (isset($_GET["$name"])) {
         echo "<div class='text-center text-danger>Problem executing query</div>";
     }
 }
+
+include('../include/footer2.php');

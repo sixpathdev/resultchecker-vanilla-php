@@ -1,49 +1,6 @@
 <?php
 require('include/header.php');
 include('include/footer.php');
-/*
-$matno = $session = $semester = '';
-
-$errors = array('matno' => '', 'session' => '', 'semester' => '');
-
-if (isset($_POST["submit"])) {
-    if (empty($_POST['matno'])) {
-        $errors['matno'] = 'Matric Number field must not be empty';
-    } else {
-        $matno = $_POST["matno"];
-    }
-
-    if (empty($_POST['session'])) {
-        $errors['session'] = 'session field must not be empty';
-    } else {
-        $matno = $_POST["session"];
-    }
-
-    if (empty($_POST['semester'])) {
-        $errors['semester'] = 'Semester field must not be empty';
-    } else {
-        $matno = $_POST["semester"];
-    }
-
-    if (array_filter($errors)) {
-        echo "<div class='text-center text-danger mt-2'>Error in forms</div>";
-    } else {
-        $sql = "SELECT matno, sessionName, department FROM results WHERE matno=:matno";
-        $stmt = $pdo->prepare($sql);
-        $stmt->bindParam(':matno', $matno);
-
-        if ($stmt->execute()) {
-            if ($stmt->rowCount() == 1) {
-                if ($row = $stmt->fetch()) {
-                    $matNo = $row['matno'];
-                    $sessionName = $row['sessionName'];
-                    $department = $row['department'];
-                }
-            }
-        }
-    }
-}
-*/
 ?>
 
 <div class="col-10">

@@ -1,5 +1,6 @@
 <?php
 require('./include/header.php');
+require('./include/footer.php');
 
 $matno = $session = $semester = '';
 
@@ -33,8 +34,8 @@ if (isset($_POST["submit"])) {
         $stmt->bindParam(':semester', $semester);
 
         if ($stmt->execute()) {
-            if ($stmt->rowCount() == 1) {
-                echo "<div class='text-center offset-2 mt-5 border'>";
+            if ($stmt->rowCount() > 0) {
+                echo "<div class='col-7 offset-2 text-center mt-5 border'>";
                 echo "<h3>Captain Elechi Amadi Polytechnic</h3>";
                 echo "<table class='table table-bordered bg-white'>";
                 echo "<thead>";
@@ -68,10 +69,10 @@ if (isset($_POST["submit"])) {
                 echo "</table>";
                 echo "</div>";
             } else {
-                echo "<div class='text-center text-danger>Row doesn't exist</div>";
+            echo "<div class='col-10 offset-1 text-center text-danger'>Row doesn't exist</div>";
             }
         } else {
-            echo "<div class='text-center text-danger>Problem executing query</div>";
+            echo "<div class='col-10 offset-1 text-center text-danger'>Problem executing query</div>";
         }
     }
 }

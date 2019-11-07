@@ -4,12 +4,6 @@ require("../include/connect.php");
 // Initialize the session
 session_start();
 
-// Check if the user is already logged in, if yes then redirect him to welcome page
-// if ($_SESSION["loggedin"] === true) {
-//     header("location: dashboard.php");
-//     exit;
-// }
-
 // Define variables and initialize with empty values
 $username = $password = "";
 $username_err = $password_err = "";
